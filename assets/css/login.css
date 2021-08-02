@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* 2.设置背景图 */
+html,
+body {
+    height: 100%;
+}
+body {
+    background: url(../images/login_bg.jpg) no-repeat;
+    background-size: cover;
+}
+/* 3.2logo相关CSS书写 */
+.logo {
+    /* 涉及到版心的知识 */
+    width: 1200px;
+    margin: 20px auto 0;
+}
+
+/* 4.2登录和注册界面公共属性CSS书写 */
+.login,
+.register {
+    width: 400px;
+    height: 310px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/* 4.4设置title-css样式 */
+.title {
+    padding: 18px 0;
+    text-align: center;
+}
+/* 4.6设置表单样式 */
+.myForm {
+    padding: 0 30px;
+}
+.myForm a {
+    float: right;
+}
+/* 调整字体图标位置 */
+.myForm .layui-form-item {
+    position: relative;
+}
+.myForm .layui-form-item i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    /* font-size: 18px; */
+}
+.myForm .layui-form-item input {
+    padding-left: 30px;
+}
+
+/* 5.2因刚开始register是隐藏的，所以： */
+.register {
+    display: none;
+}
